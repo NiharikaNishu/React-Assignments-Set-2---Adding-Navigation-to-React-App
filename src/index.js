@@ -13,7 +13,6 @@ ReactDOM.render(
   <React.Fragment>
     <BrowserRouter>
       <App />
-      <LocationDisplay/>
     </BrowserRouter>
   </React.Fragment>,
   document.getElementById("root")
