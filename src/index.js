@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./components/App";
+import LocationDisplay from "./components/LocationDisplay";
 // function generateCodeFromObject(obj){
 //     //return a code generated string
 //    }
@@ -12,6 +13,7 @@ ReactDOM.render(
   <React.Fragment>
     <BrowserRouter>
       <App />
+      <LocationDisplay/>
     </BrowserRouter>
   </React.Fragment>,
   document.getElementById("root")
