@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react";
 import "../styles/App.css";
-import LocationDisplay from "./LocationDisplay";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link, Route, Switch, useLocation } from "react-router-dom";
+import LocationDisplayComponent from "./LocationDisplayComponent";
 function About() {
   return <div>You are on the about page.</div>;
 }
@@ -26,7 +26,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/" component={Invalid} />
           </Switch>
-          <LocationDisplay />
+          <LocationDisplayComponent />
         </div>
       </>
     );
@@ -34,5 +34,4 @@ class App extends Component {
 }
 
 export default App;
-
-export const LocationDisplay = LocationDisplay;
+export const LocationDisplay = LocationDisplayComponent;
